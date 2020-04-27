@@ -6,7 +6,7 @@ class IndecisionApp extends React.Component {
     this.handleAddOption = this.handleAddOption.bind(this);
     this.handleDeleteOption = this.handleDeleteOption.bind(this);
     this.state = {
-      options: props.options
+      options: []
     };
   }
   //LIFE-CYCLE METHODS()
@@ -27,7 +27,7 @@ class IndecisionApp extends React.Component {
   //2//
   componentDidUpdate(prevProps,prevState) {
     //only save data when it changes
-    if(prevState.options.length !== this.state. options.length){
+    if(prevState.options.length !== this.state.options.length){
       const json = JSON.stringify(this.state.options);
       localStorage.setItem('options',json);
     }    
@@ -87,11 +87,9 @@ class IndecisionApp extends React.Component {
     );
   }
 }
-IndecisionApp.defaultProps= {
-  options: ['Oxford','Holy']
-};
 
 const Header = (props) => {
+  
   return (
     <div>
       <h1>{props.title}</h1>
