@@ -10,7 +10,7 @@ export default class AddOption extends React.Component{
   }
   handleAddOption(e){
     e.preventDefault();
-
+    // console.log('ashish');
     const option = e.target.elements.option.value.trim();
     //If handleAddOption worked correctly above the below line will
     //will get error=undefined, otherwise we can handle any error that occurs
