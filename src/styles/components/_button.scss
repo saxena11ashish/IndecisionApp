@@ -1,0 +1,41 @@
+//BIG BUTTON
+.big-button {
+   background-color: $purple;
+   border: none;
+   border-bottom: .6rem solid darken($purple,10%);
+   color: #fff;
+   font-weight: bold;
+   font-size: $l-size;
+   width: 100%;
+   margin-bottom: $m-size;
+   padding: 2.4rem;
+}
+
+.big-button:disabled {
+  opacity: .5;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button{
+    margin-bottom: $xl-size;
+  }
+}
+
+//BUTTONS
+.button {
+  background-color: $purple;
+  border: none;
+  border-bottom: .3rem solid darken($purple,10%);
+  color: white;
+  font-weight: 500;
+  padding : $s-size;
+}
+//BEM M is modifier
+//we use same button as above,just tweak it a little
+//so for naming convention, we use -- instead of __
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+}

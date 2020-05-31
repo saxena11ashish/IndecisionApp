@@ -8,11 +8,21 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    rules:[{
-      loader: 'babel-loader',
-      test: /\.js$/,
-      exclude: /node_module s/
-    }]    
+    rules:[
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',//single loader
+        exclude: /node_modules/
+      },
+      {
+        test: /\.s?css$/,
+        use: [  // USE when using more than 1 loader,loaders given in array
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      }
+    ]    
   },
   devtool:'cheap-module-eval-source-map',
   devServer: {
