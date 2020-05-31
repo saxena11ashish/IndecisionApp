@@ -27,6 +27,10 @@
     "style-loader": "^1.2.1",
     "validator": "^13.0.0",
     "webpack": "^3.12.0",
+<<<<<<< HEAD
     "webpack-dev-server": "^2.11.5"
+=======
+    "webpack-dev-server": "^3.1.11"
+>>>>>>> 8fb3d9dbf553bcf66bcf3d904308e27b6b9e951a
   }
 }
