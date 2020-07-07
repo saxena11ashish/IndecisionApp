@@ -11,7 +11,7 @@ export default class AddOption extends React.Component{
     //If handleAddOption worked correctly above the below line will
     //will get error=undefined, otherwise we can handle any error that occurs
     const error = this.props.handleAddOption(option);
-    this.setState(() => ({ error }));
+    this.setState(() => ({ error })); 
     //If there is no error, clear the form input to enter next entry
     if(!error){
       e.target.elements.option.value ="";
